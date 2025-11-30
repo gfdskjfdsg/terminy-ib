@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+
+# Пути к карте сайта
+Sitemap: https://домен/sitemap.xml
+# Sitemap: https://username.github.io/terminy-ib/sitemap.xml
