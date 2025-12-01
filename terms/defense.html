@@ -11,18 +11,44 @@
 </head>
 <body>
 
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function(m,e,t,r,i,k,a){
+        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=105592664', 'ym');
+
+    ym(105592664, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", accurateTrackBounce:true, trackLinks:true});
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/105592664" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+
 <header>
     <nav class="new-header">
         <div class="site-title-left">Термины ИБ</div>
-        <ul class="main-categories">
+
+        <!-- Бургер-меню (только на мобильных) -->
+        <div class="burger" id="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <!-- Само меню -->
+        <ul class="main-categories" id="menu">
             <li><a href="../index.html">Главная</a></li>
             <li><a href="auth.html">Аутентификация и доступ</a></li>
             <li><a href="web.html">Веб-уязвимости</a></li>
             <li><a href="crypto.html">Криптография</a></li>
             <li><a href="attacks.html">Типы атак</a></li>
-            <li><a href="defense.html" class="active">Средства защиты</a></li>
+            <li><a href="defense.html">Средства защиты</a></li>
             <li><a href="standards.html">Стандарты и топы</a></li>
         </ul>
+
+        <!-- Тёмный фон при открытом меню -->
+        <div class="overlay" id="overlay"></div>
     </nav>
 </header>
 
