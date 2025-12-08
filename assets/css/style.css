@@ -589,3 +589,38 @@ footer p {
 .main-categories a:hover {
     color: #e3f2fd !important;
 }
+
+
+/* ===== БАЗОВЫЕ СТИЛИ ДЛЯ МОБИЛЬНЫХ ===== */
+@media screen and (max-width: 768px) {
+    /* Скрываем обычное меню на мобильных */
+    .main-categories:not(.active) {
+        display: none;
+    }
+    
+    /* Показываем бургер на мобильных */
+    .burger {
+        display: none; /* В mobile.css будет переопределено на display: block */
+    }
+    
+    /* Корректируем отступы контейнера */
+    .container {
+        width: 100%;
+        padding: 0 15px;
+    }
+}
+
+/* Гарантируем, что бургер виден только на мобильных */
+@media screen and (min-width: 769px) {
+    .burger {
+        display: none !important;
+    }
+    
+    .overlay {
+        display: none !important;
+    }
+    
+    .main-categories {
+        display: flex !important;
+    }
+}
