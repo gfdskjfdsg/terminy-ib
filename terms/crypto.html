@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Криптография | Термины ИБ</title>
+    <meta name="description" content="AES-GCM, RSA, ECC, постквантовая криптография, Kyber, Dilithium, ZK-SNARKs, TLS 1.3, Passkeys, FHE и другие актуальные криптографические примитивы 2025 года.">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/mobile.css" media="screen and (max-width: 768px)">
+    <link rel="icon" href="../favicon.ico">
+</head>
+<body>
+
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function(m,e,t,r,i,k,a){
+        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=105592664', 'ym');
+
+    ym(105592664, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", accurateTrackBounce:true, trackLinks:true});
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/105592664" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+
+<header>
+    <nav class="new-header">
+        <div class="site-title-left">Термины ИБ</div>
+
+        <!-- Бургер-меню (только на мобильных) -->
+        <div class="burger" id="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <!-- Само меню -->
+        <ul class="main-categories" id="menu">
+            <li><a href="../index.html">Главная</a></li>
+            <li><a href="auth.html">Аутентификация и доступ</a></li>
+            <li><a href="web.html">Веб-уязвимости</a></li>
+            <li><a href="crypto.html">Криптография</a></li>
+            <li><a href="attacks.html">Типы атак</a></li>
+            <li><a href="defense.html">Средства защиты</a></li>
+            <li><a href="standards.html">Стандарты и топы</a></li>
+        </ul>
+
+        <!-- Тёмный фон при открытом меню -->
+        <div class="overlay" id="overlay"></div>
+    </nav>
+</header>
+
+<main class="term-page">
+    <section class="page-hero">
+        <h1>Криптография</h1>
+        <p>Современные алгоритмы и протоколы, устойчивые к квантовым атакам (2025)</p>
+    </section>
+
+    <div class="container">
+        <div class="terms-grid">
+
+            <article class="term-card"><h2>AES-GCM</h2><p>Симметричный шифр с аутентификацией (AEAD). Стандарт для TLS 1.3 и дискового шифрования.</p><span class="term-tag">Симметричное</span></article>
+
+            <article class="term-card"><h2>ChaCha20-Poly1305</h2><p>Быстрый потоковый AEAD-шифр. Используется в WireGuard, TLS, мобильных устройствах.</p><span class="term-tag">Симметричное</span></article>
+
+            <article class="term-card"><h2>RSA (устаревает)</h2><p>2048-бит всё ещё в ходу, но уже не рекомендуется. Заменяется на ECC и постквантовые алгоритмы.</p><span class="term-tag">Асимметричное</span></article>
+
+            <article class="term-card"><h2>ECDSA (P-256, P-384)</h2><p>Эллиптическая криптография для подписей. Стандарт в TLS и блокчейнах.</p><span class="term-tag">Подпись</span></article>
+
+            <article class="term-card"><h2>Ed25519 / Ed448</h2><p>Современные высокоскоростные подписи на эллиптических кривых (Curve25519). Используется в SSH, Signal.</p><span class="term-tag">Подпись</span></article>
+
+            <article class="term-card"><h2>X25519</h2><p>Diffie-Hellman на кривой Curve25519. Основной обмен ключами в TLS 1.3.</p><span class="term-tag">Обмен ключами</span></article>
+
+            <article class="term-card"><h2>Kyber (CRYSTALS-Kyber)</h2><p>Постквантовая KEM-победитель NIST 2022–2024. Уже в TLS 1.3 hybrid и Chrome.</p><span class="term-tag">Постквантовая</span></article>
+
+            <article class="term-card"><h2>Dilithium (CRYSTALS-Dilithium)</h2><p>Постквантовая цифровая подпись на решётках. Стандартизирована NIST 2024.</p><span class="term-tag">Постквантовая</span></article>
+
+            <article class="term-card"><h2>Falcon</h2><p>Альтернативная постквантовая подпись (меньше размер). Выбор для встроенных систем.</p><span class="term-tag">Постквантовая</span></article>
+
+            <article class="term-card"><h2>SPHINCS+</h2><p>Бесключевой (hash-based) постквантовый алгоритм подписи. Очень медленный, но сверхнадёжный.</p><span class="term-tag">Постквантовая</span></article>
+
+            <article class="term-card"><h2>TLS 1.3</h2><p>Обязательный 1-RTT, PFS по умолчанию, только современные шифры (нет RSA, нет SHA-1).</p><span class="term-tag">Протокол</span></article>
+
+            <article class="term-card"><h2>Perfect Forward Secrecy (PFS)</h2><p>Компрометация долгосрочного ключа не раскрывает прошлые сессии.</p><span class="term-tag">Свойство</span></article>
+
+            <article class="term-card"><h2>Passkeys (FIDO2 + WebAuthn)</h2><p>Синхронизируемые криптоключи на основе асимметричной криптографии вместо паролей.</p><span class="term-tag">Беспарольная</span></article>
+
+            <article class="term-card"><h2>ZK-SNARKs</h2><p>Доказательства с нулевым разглашением. Используется в Zcash, Ethereum L2, приватных транзакциях.</p><span class="term-tag">ZK</span></article>
+
+            <article class="term-card"><h2>ZK-STARKs</h2><p>Прозрачные ZK-доказательства без trusted setup. Масштабируемость для блокчейнов.</p><span class="term-tag">ZK</span></article>
+
+            <article class="term-card"><h2>Fully Homomorphic Encryption (FHE)</h2><p>Вычисления на зашифрованных данных без расшифровки. Прорыв 2024–2025.</p><span class="term-tag">FHE</span></article>
+
+            <article class="term-card"><h2>SHA-256 / SHA-3 (Keccak)</h2><p>SHA-256 — всё ещё основной, SHA-3 — альтернатива на губке.</p><span class="term-tag">Хэширование</span></article>
+
+            <article class="term-card"><h2>BLAKE3</h2><p>Самый быстрый криптографический хэш 2025 года (в Rust, Go, Linux kernel).</p><span class="term-tag">Хэширование</span></article>
+
+            <article class="term-card"><h2>HMAC</h2><p>Аутентификация сообщений на основе хэша. HMAC-SHA256 — стандарт.</p><span class="term-tag">MAC</span></article>
+
+            <article class="term-card"><h2>Argon2</h2><p>Современный алгоритм хэширования паролей (победитель PHC). Argon2id — рекомендация OWASP.</p><span class="term-tag">Пароли</span></article>
+
+            <article class="term-card"><h2>scrypt</h2><p>Предшественник Argon2, всё ещё используется в некоторых криптокошельках.</p><span class="term-tag">Пароли</span></article>
+
+            <article class="term-card"><h2>Quantum Key Distribution (QKD)</h2><p>Квантовая раздача ключей. Реальные проекты в Китае, Европе (2025).</p><span class="term-tag">Квантовая</span></article>
+
+            <article class="term-card"><h2>Noise Protocol Framework</h2><p>Современный фреймворк для защищённых каналов (WireGuard, Signal, Lightning).</p><span class="term-tag">Протокол</span></article>
+
+            <article class="term-card"><h2>Signal Protocol</h2><p>End-to-end шифрование + PFS + deniability. Стандарт мессенджеров.</p><span class="term-tag">E2EE</span></article>
+
+            <article class="term-card"><h2>PGP / OpenPGP</h2><p>Гибридная криптосистема для email и файлов. Всё ещё жива в 2025.</p><span class="term-tag">E2EE</span></article>
+
+            <article class="term-card"><h2>Key Stretching</h2><p>Увеличение сложности подбора пароля (PBKDF2, Argon2, bcrypt).</p><span class="term-tag">Пароли</span></article>
+
+            <article class="term-card"><h2>Certificate Transparency</h2><p>Публичный лог всех выданных TLS-сертификатов для предотвращения подделок.</p><span class="term-tag">PKI</span></article>
+
+            <article class="term-card"><h2>Hybrid Post-Quantum TLS</h2><p>X25519 + Kyber — переходный стандарт 2025 года (Chrome, Cloudflare).</p><span class="term-tag">Гибридная</span></article>
+
+            <article class="term-card"><h2>Threshold Cryptography</h2><p>Разделение ключа на части (MPC). Используется в кошельках и HSM.</p><span class="term-tag">MPC</span></article>
+
+        </div>
+
+        <div class="back-to-top">
+            <a href="#">Наверх ↑</a>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <p>© 2025 Термины ИБ — Справочник по информационной безопасности</p>
+</footer>
+<script src="../assets/js/protection.js"></script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const burger = document.getElementById('burger');
+        const menu = document.getElementById('menu');
+        const overlay = document.getElementById('overlay');
+
+        burger.onclick = () => {
+            burger.classList.toggle('active');
+            menu.classList.toggle('active');
+            overlay.classList.toggle('active');
+        };
+
+        overlay.onclick = () => {
+            burger.classList.remove('active');
+            menu.classList.remove('active');
+            overlay.classList.remove('active');
+        };
+    });
+</script>
+
+
+</body>
+</html>

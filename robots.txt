@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Пути к карте сайта
+Sitemap: https://cyberterms.web-prj.ru/sitemap.xml

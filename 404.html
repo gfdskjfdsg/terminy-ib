@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 — Страница не найдена</title>
+    <meta name="robots" content="noindex">
+    <style>
+        body {margin:0;font-family:system-ui,sans-serif;background:#0d47a1;color:white;height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;flex-direction:column;}
+        h1 {font-size:4rem;margin:0;}
+        p {font-size:1.4rem;margin:15px 0;}
+        a {color:#bbdefb;text-decoration:underline;}
+    </style>
+</head>
+<body>
+    <h1>404</h1>
+    <p>Страница не найдена</p>
+    <p id="msg">Перенаправляем на главную через 3...</p>
+
+    <script>
+        let sec = 3;
+        const msg = document.getElementById('msg');
+        const timer = setInterval(() => {
+            sec--;
+            msg.textContent = `Перенаправляем на главную через ${sec}...`;
+            if (sec <= 0) {
+                clearInterval(timer);
+                window.location.href = "index.html"; 
+            }
+        }, 1000);
+    </script>
+
+    <!-- Защита от копирования -->
+    <script src="assets/js/protection.js"></script>
+</body>
+</html>

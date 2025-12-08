@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Средства защиты | Термины ИБ</title>
+    <meta name="description" content="XDR, ITDR, Zero Trust 2.0, Deception, ASM, AI-SOC, Passkey Enforcement, SBOM, Rust-секурность и другие актуальные средства защиты 2025 года.">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/mobile.css" media="screen and (max-width: 768px)">
+    <link rel="icon" href="../favicon.ico">
+</head>
+<body>
+
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function(m,e,t,r,i,k,a){
+        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=105592664', 'ym');
+
+    ym(105592664, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", accurateTrackBounce:true, trackLinks:true});
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/105592664" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+
+<header>
+    <nav class="new-header">
+        <div class="site-title-left">Термины ИБ</div>
+
+        <!-- Бургер-меню (только на мобильных) -->
+        <div class="burger" id="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <!-- Само меню -->
+        <ul class="main-categories" id="menu">
+            <li><a href="../index.html">Главная</a></li>
+            <li><a href="auth.html">Аутентификация и доступ</a></li>
+            <li><a href="web.html">Веб-уязвимости</a></li>
+            <li><a href="crypto.html">Криптография</a></li>
+            <li><a href="attacks.html">Типы атак</a></li>
+            <li><a href="defense.html">Средства защиты</a></li>
+            <li><a href="standards.html">Стандарты и топы</a></li>
+        </ul>
+
+        <!-- Тёмный фон при открытом меню -->
+        <div class="overlay" id="overlay"></div>
+    </nav>
+</header>
+
+<main class="term-page">
+    <section class="page-hero">
+        <h1>Средства защиты</h1>
+        <p>Современные технологии и подходы защиты инфраструктуры в 2025 году</p>
+    </section>
+
+    <div class="container">
+        <div class="terms-grid">
+
+            <article class="term-card"><h2>XDR (Extended Detection & Response)</h2><p>Единая платформа сбора телеметрии с endpoint, network, cloud, identity.</p><span class="term-tag">2025 стандарт</span></article>
+
+            <article class="term-card"><h2>ITDR (Identity Threat Detection & Response)</h2><p>Специализированный XDR только для идентичности и доступа.</p><span class="term-tag">Идентичность</span></article>
+
+            <article class="term-card"><h2>Zero Trust 2.0</h2><p>Непрерывная микросегментация + контекст + AI-оценка риска в реальном времени.</p><span class="term-tag">Архитектура</span></article>
+
+            <article class="term-card"><h2>WAF + RASP</h2><p>Web Application Firewall + Runtime Application Self-Protection.</p><span class="term-tag">Веб</span></article>
+
+            <article class="term-card"><h2>NGAV + EDR</h2><p>Антивирус нового поколения + поведенческий анализ конечных точек.</p><span class="term-tag">Endpoint</span></article>
+
+            <article class="term-card"><h2>Deception Technology</h2><p>Ловушки, приманки, honeypot’ы нового поколения (например, Thinkst Canary).</p><span class="term-tag">Обман</span></article>
+
+            <article class="term-card"><h2>Attack Surface Management (ASM)</h2><p>Непрерывный мониторинг внешнего и внутреннего периметра.</p><span class="term-card">Управление</span></article>
+
+            <article class="term-card"><h2>SBOM (Software Bill of Materials)</h2><p>Полный список компонентов ПО для быстрого реагирования на уязвимости.</p><span class="term-tag">Цепочка поставок</span></article>
+
+            <article class="term-card"><h2>Passkey Enforcement</h2><p>Принудительный переход на FIDO2/Passkeys вместо паролей.</p><span class="term-tag">Беспарольная</span></article>
+
+            <article class="term-card"><h2>AI-SOC / SOAR 2.0</h2><p>Security Operations Center с автоматизацией на базе LLM.</p><span class="term-tag">Автоматизация</span></article>
+
+            <article class="term-card"><h2>CNAPP (Cloud-Native Application Protection Platform)</h2><p>Защита облачных приложений: CSPM + CWPP + CIEM.</p><span class="term-tag">Облако</span></article>
+
+            <article class="term-card"><h2>Secret Scanning</h2><p>Автоматическое обнаружение утечек ключей, токенов, паролей в коде и репозиториях.</p><span class="term-tag">DevSecOps</span></article>
+
+            <article class="term-card"><h2>Memory-Safe Languages (Rust, Go)</h2><p>Переход на языки, исключающие memory corruption уязвимости.</p><span class="term-tag">Secure by Design</span></article>
+
+            <article class="term-card"><h2>Bastion Hosts / Jump Boxes 2.0</h2><p>Современные JIT-доступы вместо постоянных бастионов.</p><span class="term-tag">Доступ</span></article>
+
+            <article class="term-card"><h2>MDR (Managed Detection & Response)</h2><p>Аутсорсинговый круглосуточный мониторинг и реагирование.</p><span class="term-tag">Услуга</span></article>
+
+            <article class="term-card"><h2>DLP Next-Gen</h2><p>DLP с контекстом и ML: понимает, что именно утекает.</p><span class="term-tag">Данные</span></article>
+
+            <article class="term-card"><h2>Sandbox + Detonation Chambers</h2><p>Изолированный анализ подозрительных файлов и URL.</p><span class="term-tag">Анализ</span></article>
+
+            <article class="term-card"><h2>UEBA (User and Entity Behavior Analytics)</h2><p>Обнаружение аномалий по поведению пользователей и сервисов.</p><span class="term-tag">Аналитика</span></article>
+
+            <article class="term-card"><h2>Privileged Access Management (PAM) 2.0</h2><p>Just-in-Time, Just-Enough-Admin, сессии с записью.</p><span class="term-tag">Привилегии</span></article>
+
+            <article class="term-card"><h2>Browser Isolation</h2><p>Выполнение веб-кода в удалённом контейнере (Cloudflare, Talon).</p><span class="term-tag">Браузер</span></article>
+
+            <article class="term-card"><h2>Post-Quantum VPN</h2><p>VPN с гибридными постквантовыми алгоритмами (Kyber + X25519).</p><span class="term-tag">Квантовая готовность</span></article>
+
+            <article class="term-card"><h2>Microsegmentation</h2><p>Сегментация сети на уровне отдельных рабочих нагрузок.</p><span class="term-tag">Сеть</span></article>
+
+            <article class="term-card"><h2>Threat Intelligence Platforms</h2><p>Агрегация и обогащение данных об угрозах (MISP, OpenCTI).</p><span class="term-tag">Разведка</span></article>
+
+            <article class="term-card"><h2>SIEM + UEBA + SOAR</h2><p>Классический стек современной защиты.</p><span class="term-tag">Классика</span></article>
+
+            <article class="term-card"><h2>Secure Access Service Edge (SASE)</h2><p>Облачная конвергенция сети и безопасности (Zscaler, Netskope).</p><span class="term-tag">Сеть</span></article>
+
+            <article class="term-card"><h2>Hardware Security Modules (HSM)</h2><p>Аппаратные модули для хранения и операций с ключами.</p><span class="term-tag">Ключи</span></article>
+
+            <article class="term-card"><h2>Continuous Threat Exposure Management (CTEM)</h2><p>Непрерывная оценка и приоритизация рисков (Gartner 2024–2025).</p><span class="term-tag">Процесс</span></article>
+
+            <article class="term-card"><h2>Adversary Simulation (BAS)</h2><p> Breach & Attack Simulation — постоянная проверка защит на реальных атаках.</p><span class="term-tag">Тестирование</span></article>
+
+            <article class="term-card"><h2>Identity Fabric / Identity Orchestration</h2><p>Единая платформа управления всеми источниками идентичности.</p><span class="term-tag">Идентичность</span></article>
+
+            <article class="term-card"><h2>Zero-Knowledge Backup</h2><p>Резервные копии, зашифрованные так, что даже провайдер не может их прочитать.</p><span class="term-tag">Бэкапы</span></article>
+
+        </div>
+
+        <div class="back-to-top">
+            <a href="#">Наверх ↑</a>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <p>© 2025 Термины ИБ — Справочник по информационной безопасности</p>
+</footer>
+<script src="../assets/js/protection.js"></script>
+
+
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const burger = document.getElementById('burger');
+        const menu = document.getElementById('menu');
+        const overlay = document.getElementById('overlay');
+
+        burger.onclick = () => {
+            burger.classList.toggle('active');
+            menu.classList.toggle('active');
+            overlay.classList.toggle('active');
+        };
+
+        overlay.onclick = () => {
+            burger.classList.remove('active');
+            menu.classList.remove('active');
+            overlay.classList.remove('active');
+        };
+    });
+</script>
+
+
+
+</body>
+</html>
