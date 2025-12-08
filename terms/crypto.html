@@ -131,5 +131,27 @@
     <p>© 2025 Термины ИБ — Справочник по информационной безопасности</p>
 </footer>
 <script src="../assets/js/protection.js"></script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const burger = document.getElementById('burger');
+        const menu = document.getElementById('menu');
+        const overlay = document.getElementById('overlay');
+
+        burger.onclick = () => {
+            burger.classList.toggle('active');
+            menu.classList.toggle('active');
+            overlay.classList.toggle('active');
+        };
+
+        overlay.onclick = () => {
+            burger.classList.remove('active');
+            menu.classList.remove('active');
+            overlay.classList.remove('active');
+        };
+    });
+</script>
+
+
 </body>
 </html>
